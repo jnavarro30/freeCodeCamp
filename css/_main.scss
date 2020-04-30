@@ -1,0 +1,91 @@
+//Main
+
+main {
+    background: $mainWhite;
+}
+    
+
+ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.main__list {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.main__item-top {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    
+    &:hover {
+        cursor: pointer;
+        background: rgba(0,0,0,0.1);
+    }
+}
+
+.sub__item {
+    margin-left: 1rem;
+}
+
+.sub__item-top {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 1rem;
+    
+    * {
+        align-items: center;
+    }
+
+    .sub__item-left {
+        display: flex;
+    }
+
+    .sub__item-right {
+        display: flex;
+        justify-self: end;
+        margin-right: 1rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: rgba(0,0,0,0.1);
+    }
+}
+
+.micro__item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    padding: 0.4rem;
+
+    input {
+        margin-right: 0.4rem;
+    }
+
+    .micro__text {
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+            background: rgba(0,0,0,0.1);
+        }
+    }
+
+}
+
+//Hide
+
+.hide {
+    display: none;
+}
+
+//Rotate 
+
+.rotate {
+    transform: rotate(90deg);
+}

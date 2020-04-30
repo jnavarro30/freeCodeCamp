@@ -1,0 +1,26 @@
+//Variables
+
+$mainBlack: #0A0A23;
+$inputBlack: #3B3B4F;
+$mainWhite: #F5F6F7;
+$textGray: #D0D0D5;
+
+//Settings
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Nav
+
+@import "nav";
+
+//Header
+
+@import "header";
+
+//Main
+
+@import "main";

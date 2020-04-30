@@ -1,0 +1,119 @@
+//Nav
+
+nav {
+    background: $mainBlack;
+    position: relative;
+}
+
+//Nav Top
+
+.nav__top {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    * {
+        padding: 0.4rem 0.8rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .nav__logo {
+        color: $mainWhite;
+        font-size: 1.6rem;
+        font-style: italic;
+        justify-self: start;
+        margin: 0.2rem 1rem;
+    }
+
+    .nav__btn {
+        background: $mainBlack;
+        border: 1px solid $mainWhite;
+        color: $mainWhite;
+        font-size: 1.1rem;
+        justify-self: end;
+        margin: 0.2rem 1rem;
+        outline: none;
+    }
+}
+
+//Nav Bottom
+
+.nav__bottom {
+    position: absolute;
+    width: 100%;
+    background: $mainBlack;
+
+    .nav__search {
+        display: flex;
+        background: $inputBlack;
+        width: 97%;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+
+        * {
+            color: $mainWhite;
+        }
+
+        .search {
+            color: $textGray;
+            padding: 0.2rem;
+            margin-right: 0.2rem;
+
+            &:hover {
+                cursor: pointer;
+                background: $mainBlack;
+            }
+        }
+
+        .nav__input {
+            background: $inputBlack;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            font-size: 1rem;
+            outline: none;
+        }
+    }
+
+    .nav__tabs {
+        display: flex;
+        justify-content: flex-end;
+
+        .nav__tab {
+            font-size: 1.2rem;
+            padding: 0.3rem 0.8rem;
+            background: $mainBlack;
+            color: $mainWhite;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                background: $mainWhite;
+                color: $mainBlack;
+            }
+        }
+    }
+}
+
+//Nav Button
+
+.nav__btn.white {
+   color: $mainBlack;
+   background: $mainWhite
+}
+
+//hide 
+
+.hide {
+    display: none;
+}
+
+//Other
+
+::placeholder {
+    color: $textGray;
+    font-size: 1rem;
+}
